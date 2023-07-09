@@ -1,0 +1,100 @@
+.tetris-title {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 65px;
+    /* adjust this value */
+    left: 220px;
+    /* adjust this value */
+    width: 100%;
+}
+
+.tetris-panel {
+    position: relative;
+    z-index: 100;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    /* centers items horizontally */
+    position: fixed;
+    /* keeps the div in the same position */
+    bottom: 65px;
+    /* positions the div at the bottom of the page */
+    left: 220px;
+    /* positions the div at the left of the page */
+    width: 100%;
+    /* ensures the div spans the entire width of the page */
+}
+
+.black-icon {
+    color: black;
+    margin-left: 10px;
+    /* Adjust the margin as per your requirement */
+    font-size: 20px;
+    /* Adjust the font size as per your requirement */
+}
+
+/* Add a Tetris title with changing color gradients */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-size: 600% 600%;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* Added vendor prefix */
+    background-clip: text;
+    /* Added standard property */
+    -webkit-text-fill-color: transparent;
+    background-color: white;
+    /* Added fallback background color */
+}
+
+/* Gradient animation */
+@-webkit-keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
